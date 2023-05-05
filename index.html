@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>House Price Prediction</title>
+</head>
+<body>
+	<h1>House Price Prediction</h1>
+
+	<form method="POST" action="{{ url_for('predict') }}">
+		<label for="years">Years:</label>
+		<input type="number" name="years"><br>
+
+		<label for="codes">Codes:</label>
+		<input type="number" name="codes"><br>
+
+		<label for="area">Area:</label>
+		<select name="area">
+			<option value="1">Dublin</option>
+			<option value="2">Galway</option>
+			<option value="3">Limerick</option>
+			<option value="4">Other areas</option>
+			<option value="5">Waterford</option>
+		</select><br>
+
+		<input type="submit" value="Predict">
+	</form>
+</body>
+</html>
